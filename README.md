@@ -14,6 +14,7 @@ Time to calculate: 256.821 ms
 
 # Pony
 ~~~
+$ ponyc
 $ ./fibpony 
 --- Pony Recursive Fibonacci Benchmark ---
 N: 40
@@ -24,6 +25,7 @@ Time to calculate: 288.189 ms
 
 # Go
 ~~~
+$ go build -buildvcs=false
 $ ./fibgo
 --- Go Recursive Fibonacci Benchmark ---
 N: 40
