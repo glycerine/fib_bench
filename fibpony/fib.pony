@@ -41,6 +41,8 @@ actor Main
     end
 
 // Makefile sets some options, but could be set from inside code:    
-//  fun @runtime_override_defaults(rto: RuntimeOptions) =>
-//    rto.ponynoblock = true
-//    rto.ponymaxthreads = 1
+  fun @runtime_override_defaults(rto: RuntimeOptions) =>
+    rto.ponynoblock = true
+    rto.ponymaxthreads = 1
+    rto.ponynoyield = true
+    rto.ponypin = true
