@@ -58,7 +58,8 @@ Result: 102334155
 Time to calculate: 514.411 ms
 ------------------------------------------
 
-$ dart run fib.dart  # run as byte-code with hot-code reload available
+# run as byte-code with hot-code reload available
+$ dart run fib.dart  
 --- Dart Recursive Fibonacci Benchmark ---
 N: 40
 Result: 102334155
