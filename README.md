@@ -1,6 +1,11 @@
 fib_bench: dumb but fun recursive fibonacci in Zig, Pony, Go, and Dart
 ==============
 
+Results ordered from fastest to slowest.
+
+Conversely, ordered from the least amount of runtime flexibility 
+to the most (Dart even has hot code reload).
+
 # Zig
 ~~~
 $ zig build-exe fib.zig -O ReleaseFast
@@ -45,7 +50,8 @@ Time to calculate: 514.411 ms
 ------------------------------------------
 ~~~
 
---
+------
+
 Copyright (c) 2025 Jason E. Aten, Ph.D. All rights reserved.
 
 LICENSE: MIT
