@@ -4,7 +4,7 @@ fib_bench: dumb but fun recursive fibonacci in Zig, Pony, Go, and Dart
 Results ordered from fastest to slowest.
 
 Conversely, ordered from the least amount of runtime flexibility 
-to the most (Dart even has hot code reload).
+to the most (Dart bytecode bulid even has hot code reload).
 
 # Zig
 ~~~
@@ -19,6 +19,14 @@ Time to calculate: 256.821 ms
 
 # Pony
 ~~~
+$ ponyc
+$ ./fibpony --ponynoyield --ponypin --ponymaxthreads 1
+--- Pony Recursive Fibonacci Benchmark ---
+N: 40
+Result: 102334155
+Time to calculate: 266.193 ms
+------------------------------------------
+
 $ ponyc
 $ ./fibpony 
 --- Pony Recursive Fibonacci Benchmark ---
@@ -48,6 +56,14 @@ N: 40
 Result: 102334155
 Time to calculate: 514.411 ms
 ------------------------------------------
+
+$ dart run fib.dart  # run as byte-code with hot-code reload available
+--- Dart Recursive Fibonacci Benchmark ---
+N: 40
+Result: 102334155
+Time to calculate: 590.959 ms
+------------------------------------------
+
 ~~~
 
 ------
