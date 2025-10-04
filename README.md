@@ -4,7 +4,8 @@ fib_bench: dumb but fun recursive fibonacci in Zig, Pony, Go, and Dart
 Results ordered from fastest to slowest.
 
 Conversely, ordered from the least amount of runtime flexibility 
-to the most (Dart bytecode bulid even has hot code reload).
+to the most (Go has runtime reflection, and the Dart bytecode 
+build even has hot code reload).
 
 # Zig
 ~~~
