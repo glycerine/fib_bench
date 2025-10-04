@@ -1,3 +1,3 @@
 all:
 	ponyc
-	./fibpony --ponynoyield --ponypin --ponymaxthreads 1
+	./fibpony --ponynoyield --ponypin --ponymaxthreads 1 --ponynoblock

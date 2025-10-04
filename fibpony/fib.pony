@@ -40,3 +40,7 @@ actor Main
       fib(n - 1) + fib(n - 2)
     end
 
+// Makefile sets some options, but could be set from inside code:    
+//  fun @runtime_override_defaults(rto: RuntimeOptions) =>
+//    rto.ponynoblock = true
+//    rto.ponymaxthreads = 1
